@@ -1,0 +1,61 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login  {
+      background-image: url('../img/plate.png');
+      max-width: 520px;
+      height: 520px;
+
+      padding: 10%;
+      /* animation: spin 6s linear infinite ; */
+ 
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      border-radius: 400px;
+    }
+
+    /* @keyframes spin {
+        form{transform:rotate(0deg);}
+        to {transform: rotate(360deg);}
+    } */
+    form{
+        position: relative;
+      margin-top: 20%;
+      /* border: 1px solid  white; */
+      color: black;
+     
+
+    }
+
+
+  }
+
+p{
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+h3{
+    text-align: center;
+}
+
+.fork{
+  margin-left: 40%;
+  margin-top: 20%;
+  height: 65%;
+  width: auto;
+}
+.knife{
+  height: 70%;
+  width: auto;
+  margin-top: 20%;
+
+}
+
+.b{
+  margin-left: 36%;
+
+}

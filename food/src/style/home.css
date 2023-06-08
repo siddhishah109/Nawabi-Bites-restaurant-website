@@ -1,0 +1,29 @@
+.home{
+ color: white;
+ display: flex;
+
+
+}
+
+
+.title{
+    /* background-color: aqua; */
+
+    margin-left: 10vw;
+    margin-top: 20vh;
+    width:30%;
+   
+}
+.h1, h1 {
+    font-size: 100px;
+}
+
+
+.h2, h2 {
+    font-size: 20px;
+}
+
+.but{
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
