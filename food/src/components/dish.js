@@ -16,7 +16,7 @@ const Dish = (props) => {
   return (
 
   <>
-  <div className='c1'><img src={props.name} className='p1 m-5 sun' alt='dish'/> <span className='t1'>{props.title}</span></div>
+  <div className='c1'><img src={props.name} className='p1 m-5 sun' alt='dish'/> <span className='t1' >{props.title}</span></div>
   </>
   )
 }

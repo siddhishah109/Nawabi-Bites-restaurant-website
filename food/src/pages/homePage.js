@@ -18,15 +18,17 @@ const HomePage = () => {
 
 <div className='title'>
 <h1 className='h1 wrapper'>
-  <div className='bg'>Lazeez....</div>
-  <div className='fg'>Lazeez....</div>
+  <div className='bg' >Lazeez....</div>
+  <div className='fg' >Lazeez....</div>
 </h1>
 <h2>The tast of India</h2>
 
 
 <Button className='but' variant="light">Order Now!</Button>
 </div>
-<div className='img'>
+<div className='img' 
+     data-aos-anchor-placement="top-bottom"  
+ >
 <img src={logo} alt='logo' className='logo' height={550}/>
 </div>
 

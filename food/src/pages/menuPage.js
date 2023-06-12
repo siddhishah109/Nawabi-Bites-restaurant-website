@@ -4,7 +4,7 @@ import a1 from '../img/a1.png';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../style/menu.css'
-import Card1 from '../components/card';
+import AutoPlay from '../components/autoplay';
 
 
 const MenuPage = () => {
@@ -73,11 +73,23 @@ const MenuPage = () => {
       <div>
         hiii
       </div>
-      <Card1/>
-      <Card1/>
-      <Card1/>
-      <Card1/>
     
+   <div className='p-3 m-5 text-white'>
+   <AutoPlay title='Deserts'/>
+   <div m-5 p-5>
+    Cupidatat mollit aliqua occaecat enim nostrud deserunt. Incididunt dolor ad sint minim nostrud culpa in incididunt aliquip fugiat in sint sunt. Tempor fugiat commodo cupidatat aliqua adipisicing exercitation dolor. Eu laboris exercitation irure incididunt cillum adipisicing. Adipisicing irure aute tempor amet nulla.
+
+   </div>
+   
+   </div>
+   <div className='p-3 m-5 text-white'>
+   <AutoPlay title='Deserts'/>
+   
+   </div>
+   <div className='p-3 m-5 text-white'>
+   <AutoPlay title='Deserts'/>
+   
+   </div>
 
   </div>
   
