@@ -8,12 +8,12 @@ import '../style/about.css'
 
 const About = () => {
   return (
-    <div>
+    <div className='d'>
       <Container>
       <Row>
-    <Col className='a' ><img className='a1' src={about} alt='about'/></Col>
-    <Col className='a2'>
-    <video width={500} height={400} autoplay controls loop muted playsInline className='v'>
+    <Col className='a2' ><img className='a1' src={about} alt='about'/></Col>
+    <Col >
+    <video width={500} height={400} autoPlay  loop muted playsInline className='v'>
         <source  src={about1} type='video/mp4'/>
         your browser does not support this video
         </video>

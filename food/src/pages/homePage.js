@@ -9,14 +9,17 @@ import p3 from '../img/p3.png';
 import Dish from '../components/dish';
 import Dish2 from '../components/dish2';
 
+
+
 const HomePage = () => {
   return (
     <>
     <div className='home'>
 
 <div className='title'>
-<h1 className='h1'>
-  Lazeez....
+<h1 className='h1 wrapper'>
+  <div className='bg'>Lazeez....</div>
+  <div className='fg'>Lazeez....</div>
 </h1>
 <h2>The tast of India</h2>
 

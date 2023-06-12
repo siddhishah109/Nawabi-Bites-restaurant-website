@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "react-scroll-rotate": "^0.0.7"
+  }
+}
