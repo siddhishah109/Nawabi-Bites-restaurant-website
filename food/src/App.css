@@ -1,6 +1,155 @@
 .App{
-  background-color: rgb(10, 10, 10);
+  /* background-color: rgb(10, 10, 10); */
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+}
+
+
+.home1{
+  background-image: url('../src/img/bg1.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+ 
+}
+.home12{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+   
+ 
+}
+.logo-home{
+  height:45vh;
+  user-select: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-home:hover {
+  transform: scale(1.1);
+}
+
+.home-title1{
+font-family: 'Great Vibes', cursive;
+font-size: xx-large;
+user-select: none;
+}
+
+.home-title2{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: x-large;
+user-select: none;
+}
+.but{
+  margin-bottom: 5vh;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+  font-size: larger;
+}
+.slider-home{
+
+}
+.slider-autoslider{
+  width:90vw;
+}
+
+.About-home{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40vh;
+}
+.About-title{
+  font-size: 13vh;
+  font-family: 'Tangerine', cursive;
+  color: #976513;
+}
+.About-content{
+  background-image: url('../src/img/bg2.png');
+
+      /* margin-left: 35vw; */
+ 
+    width: 100vw;
+    display: flex;
+   
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 80vh;
+    background-size: contain;
+    justify-content: center;
+  
+    /* background-repeat: no-repeat; */
+ 
+    align-items: center;
+
+}
+.About-text{
+  width: 90vw;
+  font-family: 'Yellowtail', cursive;
+  text-align: center;
+  font-size: 5vh;
+  color: #02022b;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+  font-family: 'Yellowtail', cursive;
+}
+
+.nav-l{
+  margin-right: 10%;
+}
+.card-title{
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 30px;
+font-weight: bold;
+}
+
+.p-img{
+height:50vh;
+margin: 3%;
+border-radius: 25px;
+transition: transform 0.3s ease;
+}
+.p-img:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+
+.menu-home{
+  background-color: black;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.butt {
+  animation: pulse 2s infinite; 
+  height:6vh/* Adjust the animation duration and iteration count as needed */
+}
+
+
+.plate-home{
+  display:flex;
+  justify-content: center;
 }
