@@ -1,73 +1,46 @@
-import React from "react";
 import {
-Box,
-Container,
-Row,
-Column,
-FooterLink,
-Heading,
-} from "../style/footerstyle";
-
-const Footer = () => {
-return (
-	<Box bg="dark" variant="dark">
-	
-	<Container>
-		<Row>
-		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Services</Heading>
-			<FooterLink href="#">Writing</FooterLink>
-			<FooterLink href="#">Internships</FooterLink>
-			<FooterLink href="#">Coding</FooterLink>
-			<FooterLink href="#">Teaching</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Uttar Pradesh</FooterLink>
-			<FooterLink href="#">Ahemdabad</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
-			</FooterLink>
-		</Column>
-		</Row>
-	</Container>
-	</Box>
-);
-};
-export default Footer;
+	MDBFooter,
+	MDBContainer,
+	MDBIcon,
+	MDBBtn
+  } from 'mdb-react-ui-kit';
+  
+  export default function Footer() {
+	return (
+	  <MDBFooter className='bg-dark text-center text-white'>
+		<MDBContainer className='p-4 pb-0'>
+		  <section className='mb-4'>
+			<MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+			  <MDBIcon fab icon='facebook-f' />
+			</MDBBtn>
+  
+			<MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+			  <MDBIcon fab icon='twitter' />
+			</MDBBtn>
+  
+			<MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+			  <MDBIcon fab icon='google' />
+			</MDBBtn>
+			<MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+			  <MDBIcon fab icon='instagram' />
+			</MDBBtn>
+  
+			<MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+			  <MDBIcon fab icon='linkedin-in' />
+			</MDBBtn>
+  
+			<MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+			  <MDBIcon fab icon='github' />
+			</MDBBtn>
+		  </section>
+		</MDBContainer>
+  
+		<div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+		  © 2023 Copyright :   Nawabi Bites 
+		  <a className='text-white mx-3' href='/' >
+		   <MDBIcon fas icon="utensils" />
+		  </a>
+		</div>
+	  </MDBFooter>
+	);
+  }

@@ -1,6 +1,7 @@
-import { NavbarC } from './components/navbar';
+
 import Footer from './components/footer';
 import {BrowserRouter , Routes , Route} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import HomePage from './pages/homePage';
 import Loginpage from './pages/loginpage';
 import MenuPage from './pages/menuPage';
@@ -9,6 +10,7 @@ import SignupPage from './pages/signupPage';
  
 
 import './App.css';
+import NavbarC from './components/navbar';
 
 function App() {
   return (

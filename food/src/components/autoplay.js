@@ -10,10 +10,11 @@ import f6 from '../img/f6.jpg'
 
 export default class AutoPlay extends Component {
   render(props) {
+    const isSmallScreen = window.innerWidth <= 768;
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: isSmallScreen ? 1 : 3,
       slidesToScroll: 1,
       autoplay: true,
       speed: 5000,
@@ -22,7 +23,7 @@ export default class AutoPlay extends Component {
     };
     return (
       <div >
-        <h2>{this.props.title}</h2>
+        <h2 className="title-autoplay">{this.props.title}</h2>
         <Slider {...settings} className='slider-autoslider'>
           <div>
             <Card1 title='Delicious Biryani' src={f1}/>

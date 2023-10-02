@@ -23,7 +23,7 @@ const Loginpage = () => {
     <>
 
 
-    <Row>
+    <Row className='loginheight'>
         <Col ><img  className='fork' src={fork} alt='fork'/></Col>
         <Col xs={6}>     <div className="Login">
       
