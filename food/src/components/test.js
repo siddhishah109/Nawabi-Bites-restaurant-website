@@ -8,12 +8,12 @@ import {
 } from "mdb-react-ui-kit";
 const Testimonials = () => {
     return (
-        <section id="testimonials" className="testimonials section-bg">
+        <section id="testimonials" className="testimonials section-bg" >
             <div>
 
 
                 <MDBContainer className="py-5">
-                    <div className='test-title'>
+                    <div className='test-title' >
                         <h2>
                             Testimonials
                         </h2>

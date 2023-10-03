@@ -11,6 +11,7 @@ import SignupPage from './pages/signupPage';
 
 import './App.css';
 import NavbarC from './components/navbar';
+import AdminPage from './pages/adminPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/' element={<HomePage/>}/>
       <Route path='login' element={<Loginpage/>}/>
       <Route path='menu' element={<MenuPage/>}/>
+      <Route path="admin" element={<AdminPage />} />
       <Route path='signup' element={<SignupPage/>}/>
       <Route path='*' element={<NoPage/>}/>
 

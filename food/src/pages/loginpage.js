@@ -7,11 +7,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../style/login.css'
 import { useState } from 'react';
+import firebase from 'firebase/compat/app';
+import { useNavigate } from 'react-router-dom';
 
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 const Loginpage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }
@@ -19,6 +23,19 @@ const Loginpage = () => {
   function handleSubmit(event) {
     event.preventDefault();
   }
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+
+    try {
+      await firebase.auth().signInWithEmailAndPassword(email, password);
+      // User signed in successfully
+      navigate('/admin');
+    } catch (error) {
+      // Handle sign-in errors
+      alert(error.message);
+      console.error(error.message);
+    }
+  };
   return (
     <>
 
@@ -27,7 +44,7 @@ const Loginpage = () => {
         <Col ><img  className='fork' src={fork} alt='fork'/></Col>
         <Col xs={6}>     <div className="Login">
       
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSignIn}>
       <h3>Login</h3>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
